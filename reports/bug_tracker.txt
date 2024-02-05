@@ -1,0 +1,32 @@
+
+# BUG TRACKER #
+
+Any issues found should be categorised according to the following categories:
+"Urgent" - The issue is critical and needs to be resolved immediately.
+"High" - The issue is important and needs to be resolved as soon as possible.
+"Medium" - The issue is moderate and should be resolved in the near future.
+"Low" - The issue is minor and can be resolved during the final clean-up.
+
+With each issue, please also include the following information:
+- The issue itself
+- The file in which the issue is located
+- The date the issue was found
+
+When fixed:
+- The date the issue was fixed
+- How it was fixed
+_______________________________________________________________________________________________________________________
+
+[Urgent]
+Nothing to report - happy days!
+
+[High]
+Nothing to report - happy days!
+
+[Medium]
+Nothing to report - happy days!
+
+[Low]
+Nothing to report - happy days!
+
+_______________________________________________________________________________________________________________________

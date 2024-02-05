@@ -1,0 +1,7 @@
+In the final stages of the project, the HTML and CSS are to be validated,
+and the site is to be tested on different browsers and devices. 
+
+The results of this validation, as well as remediation, are documented here.
+
+# HTML Validation #
+Nothing to report. Yet.
