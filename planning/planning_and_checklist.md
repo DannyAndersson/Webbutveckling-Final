@@ -5,18 +5,18 @@
     60 minutes fridays
 
 ## Week 1 (2024-02-12) - 3.33/30 hours
-- [ ] Planning
+- [X] Planning
   - [X] Project Brief
   - [X] Initial Research
-  - [ ] Site Layout
-- [ ] Design
+  - [X] Site Layout
+- [X] Design
   - [X] Sketches
   - [X] Style and Palette General Idea
 
 ## Week 2 (2024-02-19) - 6.66/30 hours
-- [ ] Design (cont.)
-  - [ ] Style and Palette Finalization
-  - [ ] Finish Sketches
+- [X] Design (cont.)
+  - [X] Style and Palette Finalization
+  - [X] Finish Sketches
   - [ ] Submit for approval
 
 ## Week 3 (2024-02-26) - 10/30 hours
