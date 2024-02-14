@@ -6,12 +6,12 @@
 
 ## Week 1 (2024-02-12) - 3.33/30 hours
 - [ ] Planning
-  - [ ] Project Brief
-  - [ ] Initial Research
+  - [X] Project Brief
+  - [X] Initial Research
   - [ ] Site Layout
 - [ ] Design
-  - [ ] Sketches
-  - [ ] Style and Palette General Idea
+  - [X] Sketches
+  - [X] Style and Palette General Idea
 
 ## Week 2 (2024-02-19) - 6.66/30 hours
 - [ ] Design (cont.)
@@ -58,6 +58,7 @@
   - [ ] Responsive design implementation
     - [ ] Test on different devices
     - [ ] Fix everything that looks disgusting
+  - [ ] Semantic HTML Validation
   - { } Progress/Bug Report in /reports
 
 ## Week 7 (2024-03-25) - 23.33/30 hours
@@ -65,6 +66,7 @@
   - [ ] Implement PHP posting for contact form
   - [ ] Implement Google Maps API
   - [ ] Testing and bugfixing
+  - [ ] Semantic HTML (cont.)
   - { } Progress/Bug Report in /reports
 
 ## Week 8 (2024-04-01) - 26.66/30 hours

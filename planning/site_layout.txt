@@ -1,0 +1,6 @@
+This website only requires about 5 pages of content, and most of them are very simple.
+It should be easy to keep good design practices and implement responsivity.
+
+Given that the contents of each page are also given in the attached file,
+this should be a straightforward project. 
+The important thing is maintaining semantic HTML, responsive CSS, and general good practices.
