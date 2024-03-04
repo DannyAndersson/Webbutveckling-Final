@@ -1,0 +1,63 @@
+/*
+    - Styling guidelines & pallettes - 
+    #E8E1D5 - Content background
+    #000000 - Content outline
+    #A08A68 - Border/Logo Outline
+    #E5BE7B - Header/Footer
+    #FFD800 - Accent
+*/
+
+/* Body */
+body {
+    background-image: url('resources/background1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+
+    /* Hide scrollbars */
+    /*overflow: hidden;*/
+}
+
+/* Overlays background, content goes above it. */
+.background-cover {
+    background-color: rgba(229, 190, 123, 0.3);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;  /* Include border and padding in the element's total width and height */
+    border: #A08A68 solid 4px;
+
+    width: 100%; /* Cover full body */
+    height: 100%;
+}
+
+/* Content boxes */
+.content-box {
+    background-color: #E8E1D5;
+    border: 4px solid #A08A68;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+/* Grid layout */
+.grid-content-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2px;
+    padding: 6px;
+}
+.twospan{
+    grid-column: span 2;
+}
+
+.grid-content-layout-content-box{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 2px;
+    padding: 6px;
+}

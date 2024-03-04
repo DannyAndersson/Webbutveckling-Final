@@ -1,0 +1,17 @@
+/*
+    - Styling guidelines & pallettes - 
+    #E8E1D5 - Content background
+    #000000 - Content outline
+    #A08A68 - Border/Logo Outline
+    #E5BE7B - Header/Footer
+    #FFD800 - Accent
+*/
+
+/* Header for navbar - occupy full width of page top */
+.header{
+    background-color: #E5BE7B;
+    border: 4px solid #A08A68;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
