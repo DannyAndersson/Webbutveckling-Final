@@ -17,7 +17,7 @@
 - [X] Design (cont.)
   - [X] Style and Palette Finalization
   - [X] Finish Sketches
-  - [ ] Submit for approval
+  - [X] Submit for approval
 
 ## Week 3 (2024-02-26) - 10/30 hours
 - [ ] Start Development
@@ -25,7 +25,7 @@
     - [ ] Unifying page header
     - [ ] Responsive navbar
     - [ ] Unifying footer
-    - [ ] Use placeholder content for now
+    - [x] Use placeholder content for now
   - { } Progress/Bug Report in /reports
 
 ## Week 4 (2024-03-04) - 13.33/30 hours

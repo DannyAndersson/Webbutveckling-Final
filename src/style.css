@@ -21,6 +21,7 @@ body {
     /*overflow: hidden;*/
 }
 
+
 /* Overlays background, content goes above it. */
 .background-cover {
     background-color: rgba(229, 190, 123, 0.3);

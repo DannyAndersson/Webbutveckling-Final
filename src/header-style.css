@@ -15,3 +15,41 @@
     margin: 20px;
     border-radius: 10px;
 }
+
+/*
+            <!-- Header -->
+            <div class="header">
+                <div class="header-content-flex">
+                    <img src="resources/Logo.png" alt="Logo" class="header-logo">
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Curriculum</a></li>
+                        <li><a href="#">Find Us</a></li>
+                        <li><a href="#">Apply</a></li>
+                    </ul>
+                </div> 
+            </div>
+            <!-- End Header -->
+*/
+.header-content-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo{
+    width: 100px;
+    height: 100px;
+}
+
+.header ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.header ul li a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+}
