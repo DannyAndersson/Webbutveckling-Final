@@ -22,20 +22,6 @@ body {
 }
 
 
-/* Overlays background, content goes above it. */
-.background-cover {
-    background-color: rgba(229, 190, 123, 0.3);
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    box-sizing: border-box;  /* Include border and padding in the element's total width and height */
-    border: #A08A68 solid 4px;
-
-    width: 100%; /* Cover full body */
-    height: 100%;
-}
-
 /* Content boxes */
 .content-box {
     background-color: #E8E1D5;
