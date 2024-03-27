@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>The Title!</title>
+        <title>The Indie Quests</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" type="text/css" href="header-style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +15,8 @@
     <body>
         <div class="background-cover">
             <!-- Header -->
-            <div class="header">
+            <!-- Desktop header, used for larger screens -->
+            <div class="header-desktop">
                 <div class="header-content-flex">
                     <img src="resources/Logo.png" alt="Logo" class="header-logo">
                     <ul>
@@ -25,6 +26,25 @@
                         <li><a href="#">Apply</a></li>
                     </ul>
                 </div> 
+            </div>
+
+            <!-- Mobile header, used for smaller screens -->
+            <div class="header-mobile">
+                <div class="header-content-block">
+                    <div class="header-content-flex">
+                        <img src="resources/Logo.png" alt="Logo" class="header-logo">
+                        <!--  Hamburger menu button -->
+                        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()"><button class="hamburger-menu-button">&#9776;</button></a>
+                    </div>
+                    <div id="mobile-menu-item" class="mobile-menu-item">
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Curriculum</a></li>
+                            <li><a href="#">Find Us</a></li>
+                            <li><a href="#">Apply</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <!-- End Header -->
 
@@ -50,5 +70,15 @@
                 </div>
             </div>
         </div>
+        <script>
+            function toggleMenu() {
+                var x = document.getElementById("mobile-menu-item");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
     </body>
 </html>

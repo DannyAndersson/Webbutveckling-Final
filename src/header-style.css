@@ -7,54 +7,113 @@
     #FFD800 - Accent
 */
 
-/* Header for navbar - occupy full width of page top */
-.header{
+/* Header for desktop navbar - occupy full width of page top */
+.header-desktop{
     background-color: #E5BE7B;
     border: 4px solid #A08A68;
     padding: 20px;
     border-radius: 10px;
 }
 
-/*
-            <!-- Header -->
-            <div class="header">
-                <div class="header-content-flex">
-                    <img src="resources/Logo.png" alt="Logo" class="header-logo">
-                    <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Curriculum</a></li>
-                        <li><a href="#">Find Us</a></li>
-                        <li><a href="#">Apply</a></li>
-                    </ul>
-                </div> 
-            </div>
-            <!-- End Header -->
-*/
-.header-logo{
+.header-desktop .header-logo{
     width: 100px;
     height: 100px;
 }
 
-.header-content-flex{
+.header-desktop .header-content-flex{
     display: flex;
     justify-content: space-between;
     align-items:center;
-    
 }
 
-.header ul{
+.header-desktop ul{
     list-style-type: none;
     padding: 0;
     width: 100%;
 }
 
-.header ul li{
+.header-desktop ul li{
     display: inline;
     margin: 0 40px;
 }
 
-.header ul li a{
+.header-desktop ul li a{
     text-decoration: none;
     color: #000000;
     font-size: 24px;
+}
+
+/* Header for mobile navbar */
+.header-mobile{
+    background-color: #E5BE7B;
+    border: 4px solid #A08A68;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.header-mobile .header-logo{
+    width: 100px;
+    height: 100px;
+}
+
+.header-mobile .header-content-block{
+    display: block;
+    text-align: center;
+}
+.header-mobile .header-content-block .header-content-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+/* Hamburger Menu */
+/* Hide hamburger menu content at first */
+.mobile-menu-item{
+    display: none;
+}
+.hamburger-menu-button{
+    width: 100px;
+    height: 100px;
+    background-color: #E5BE7B;
+    border: 4px solid #A08A68;
+    font-size:xx-large;
+}
+.mobile-menu-item ul{
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+.mobile-menu-item ul li{
+    display: block;
+    text-align: right;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin-top: 4px;
+    border: 4px solid #A08A68;
+}
+.mobile-menu-item ul li a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 24px;
+    padding: 12px;
+}
+
+/* Query for mobile view */
+@media only screen and (max-width: 600px) {
+    .header-desktop{
+        display: none;
+    }
+    .header-mobile{
+        display: block;
+    }
+}
+
+/* Query for desktop view */
+@media only screen and (min-width: 601px) {
+    .header-desktop{
+        display: block;
+    }
+    .header-mobile{
+        display: none;
+    }
 }

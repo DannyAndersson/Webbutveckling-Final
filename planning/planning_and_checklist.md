@@ -28,7 +28,7 @@
     - [x] Use placeholder content for now
   - { } Progress/Bug Report in /reports
 
-## Week 4 (2024-03-04) - 13.33/30 hours
+## Week 4 (2024-03-25) - 13.33/30 hours
 - [ ] Development (cont.)
   - [ ] General Styling
     - [ ] Make sure fonts are consistent (Montserrat)
@@ -45,7 +45,7 @@
     - [ ] Google Maps placeholder
   - { } Progress/Bug Report in /reports
 
-## Week 5 (2024-03-11) - 16.66/30 hours
+## Week 5 (2024-04-01) - 16.66/30 hours
 - [ ] Development (cont.)
   - [ ] apply.html
     - [ ] Implement header/footer
@@ -53,7 +53,7 @@
   - { } Cleanup of things we're behind on
   - { } Progress/Bug Report in /reports 
 
-## Week 6 (2024-03-18) - 20/30 hours
+## Week 6 (2024-04-08) - 20/30 hours
 - [ ] Development (cont.)
   - [ ] Responsive design implementation
     - [ ] Test on different devices
@@ -61,7 +61,7 @@
   - [ ] Semantic HTML Validation
   - { } Progress/Bug Report in /reports
 
-## Week 7 (2024-03-25) - 23.33/30 hours
+## Week 7 (2024-04-15) - 23.33/30 hours
 - [ ] Development (cont.)
   - [ ] Implement PHP posting for contact form
   - [ ] Implement Google Maps API
@@ -69,7 +69,7 @@
   - [ ] Semantic HTML (cont.)
   - { } Progress/Bug Report in /reports
 
-## Week 8 (2024-04-01) - 26.66/30 hours
+## Week 8 (2024-04-22) - 26.66/30 hours
 - [ ] Production Finalization
   - [ ] Final testing
   - [ ] Bugfixing
@@ -79,7 +79,7 @@
 - [ ] Start Final Report
 - { } Progress/Bug Report in /reports
 
-## Week 9 (2024-04-08) - 30/30 hours
+## Week 9 (2024-04-29) - 30/30 hours
 - [ ] Final Report
   - [ ] Make sure everything actually works - extension?
   - [ ] Finalize report
