@@ -22,7 +22,7 @@ body {
 }
 
 
-/* Content boxes */
+/* Main content */
 .content-box {
     background-color: #E8E1D5;
     border: 4px solid #A08A68;
@@ -36,14 +36,15 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 2px;
-    padding: 6px;
+
+    width: 100%;
 }
 .twospan{
     grid-column: span 2;
 }
 
 .grid-content-layout-content-box{
-    display: grid;
+    display: block;
     grid-template-rows: 1fr 1fr;
     grid-gap: 2px;
     padding: 6px;

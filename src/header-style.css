@@ -28,13 +28,13 @@
 
 .header-desktop ul{
     list-style-type: none;
-    padding: 0;
+    padding-left:5%;
     width: 100%;
 }
 
 .header-desktop ul li{
     display: inline;
-    margin: 0 40px;
+    margin: 7.5%;
 }
 
 .header-desktop ul li a{
@@ -99,7 +99,7 @@
 }
 
 /* Query for mobile view */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 747px) {
     .header-desktop{
         display: none;
     }
@@ -109,7 +109,7 @@
 }
 
 /* Query for desktop view */
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 748px) {
     .header-desktop{
         display: block;
     }
