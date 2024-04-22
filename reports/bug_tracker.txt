@@ -24,9 +24,14 @@ Nothing to report - happy days!
 Nothing to report - happy days!
 
 [Medium]
-Nothing to report - happy days!
+1 - UNSOLVED:
+    Header flexbox not working as expected on index.html on "inbetween" screen sizes.
+    File: index.html, found 2024/04/22.
 
 [Low]
-Nothing to report - happy days!
+2 - UNSOLVED:
+    Not necessarily a bug, but we're not practicing good development habits. Class names are nonsensical,
+    and we're not using semantic HTML. This will need to be fixed before the final submission.
+    File: All. "Found" 2024/04/22.
 
 _______________________________________________________________________________________________________________________
