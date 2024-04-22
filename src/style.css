@@ -110,3 +110,8 @@ article iframe{
         flex-basis: calc(46.66% - 10px); /* 66.66% width for each info box with margin */
     }
 }
+
+/* General styling */
+.no-margin p{
+    margin: 0;
+}
