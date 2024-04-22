@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Indie Quest</title>
+        <link rel="stylesheet" type="text/css" href="styling/style.css">    <!-- Generic stylesheet -->
+        <link rel="stylesheet" type="text/css" href="styling/header-style.css">
+        <link rel="stylesheet" type="text/css" href="styling/curriculum.css">   <!-- Specific stylesheet for this page -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Google Fonts Preconnect -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!-- End Google Fonts -->
+    </head>
+    <body>
+        <div class="background-cover">
+            <!-- Header -->
+            <!-- Desktop header, used for larger screens -->
+            <header class="header-desktop">
+                <div class="header-content-flex">
+                    <a href="index.html"><img src="resources/Logo.png" alt="Logo" class="header-logo"></a>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="curriculum.html">Curriculum</a></li>
+                        <li><a href="findus.html">Find Us</a></li>
+                        <li><a href="apply.html">Apply</a></li>
+                    </ul>
+                </div> 
+            </header>
+
+            <!-- Mobile header, used for smaller screens -->
+            <header class="header-mobile">
+                <div class="header-content-block">
+                    <div class="header-content-flex">
+                        <a href="index.html"><img src="resources/Logo.png" alt="Logo" class="header-logo"></a>
+                        <!--  Hamburger menu button -->
+                        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()"><button class="hamburger-menu-button">&#9776;</button></a>
+                    </div>
+                    <div id="mobile-menu-item" class="mobile-menu-item">
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Curriculum</a></li>
+                            <li><a href="#">Find Us</a></li>
+                            <li><a href="#">Apply</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <!-- End Header -->
+
+            <!-- Main Section -->
+            <h1>FINALLY READING HOUSE OF LEAVES:</h1>
+            <div class="main-flex-container">
+                <div class="main-flex">
+                    <!-- Dropdowns -->
+                    <section> <!-- Programming & Production -->
+                        <h1>Programming & Production</h1>
+                        <h3>Our program is divided into 5 sections, intended to be covered in 1 year of full-time study.</h3>
+                        <article>
+                            <h4>1. Preparation</h4>
+                            <p>The Indie Quest requires no previous experience in programming. Through carefully designed missions, you will conquer the basics of programming by coding individual aspects of games. You will learn how computers work and touch on other aspects of computer science, such as computational thinking and algorithm design, so that you will have the foundation to tackle any programming problems thrown your way. Skills covered:</p>
+                            <ul>
+                                <li>How computers work</li>
+                                <li>Procedural programming</li>
+                                <li>Algorithm design basics</li>
+                                <li>Data types and structures</li>
+                                <li>Text manipulation</li>
+                                <li>User interaction</li>
+                            </ul>
+                        </article>
+                        <article>
+                            <h3>2. Text adventure</h3>
+                            <p>It's time to design your first game. You will choose your own theme and write a text adventure with various locations, characters, and objects to manipulate. It's up to you what the goal of the game is. The project will be bigger than previous missions and require a more organized approach. Skills covered:</p>
+                            <ul>
+                                <li>Game design documentation</li>
+                                <li>Code organization</li>
+                                <li>Functional programming basics</li>
+                                <li>Project management</li>
+                            </ul>
+                        </article>
+                        <article>
+                            <h3>3. Arcade game</h3>
+                            <p>Your next project is a simple, top-down, one-screen arcade game, such as a space shooter. You will take your coding knowledge and use it to learn game programming with the Unity game engine. Skills covered:</p>
+                            <ul>
+                                <li>Game architecture</li>
+                                <li>Scene management</li>
+                                <li>Graphics engine basics</li>
+                                <li>Physics engine basics</li>
+                                <li>Art assets</li>
+                                <li>User interface</li>
+                                <li>Vector math</li>
+                                <li>Basic artificial intelligence</li>
+                                <li>Agile development</li>
+                            </ul>
+                        </article>
+                        <article>
+                            <h3>3.5 Game Jam</h3>
+                            <p>Before we move on to more learning, you will participate in a 72-hours game jam that will bring everyone at Spellkolektivet together to create games based around a shared theme. You could work alone or take the opportunity to team up, either with other students or join the rest of the developers from the house.</p>
+                        </article>
+                        <article>
+                            <h3>4. Platformer</h3>
+                            <p>With basic game architecture knowledge under your belt, it's time to create a complex game that will use all the most common components you'll need in any game project. This will be the last guided project before starting your final game. Skills covered:</p>
+                            <ul>
+                                <li>Object-oriented programming</li>
+                                <li>Memory management</li>
+                                <li>State-based artificial intelligence</li>
+                                <li>Pathfinding</li>
+                                <li>Animation</li>
+                                <li>Game object organization</li>
+                                <li>Levels and menus</li>
+                                <li>Saving and loading</li>
+                                <li>Audio</li>
+                            </ul>
+                        </article>
+                        <article>
+                            <h3>5. Final project</h3>
+                            <p>The game you will graduate the program with will be completely up to you. It's time to put all you've learned into a polished product, optionally learning some advanced topics along the way. You can go at it alone, or join forces with another classmate or two. Optional skills to explore:</p>
+                            <ul>
+                                <li>3D graphics and physics</li>
+                                <li>Procedural level generation</li>
+                                <li>Complex control systems and UI</li>
+                                <li>Goal-based artificial intelligence</li>
+                                <li>Multiplayer</li>
+                                <li>Marketing</li>
+                                <li>Publishing</li>
+                            </ul>
+                    </section>
+                    <section> <!-- Tools & languages-->
+                        <h1>Tools & Languages</h1>
+                        <article>
+                            <p>The concepts you will learn in the first two sections of the programming curriculum will be highly universal and applicable to any kind of programming tasks, in and outside video games. Sections 3–5 will be specific to game development, but giving you a high-level understanding of how games work that can be applied to any game type and approach.</p>
+                            <p>To make teaching practical however, we had to choose a specific programming language and game engine around which to organize the learning materials. We chose Unity since it is the most popular engine in indie game development and one you are most likely to encounter when trying to collaborate with other indie developers. Based on this decision, C# was the logical choice for the programming language.</p>
+                            <p>While some of the concepts common in the gaming industry will not be covered due to this choice (for example, pointers and manual memory management), you will receive enough low-level knowledge about how computers work that you will not have problems moving to C or C++ if you choose to afterwards. Learning a specific programming language is not the hard part and a skilled programmer with understanding of general concepts has no problem switching and learning a new programming language. Similarly, moving from Unity to another engine will not be hard if you decide to do so.</p>
+                        </article>
+                    </section>
+                    <section> <!-- Art & Design -->
+                        <h1>Art & Design</h1>
+                        <article>
+                            <p>The art curriculum runs in parallel with programming and production and serves to create all the necessary art assets for the projects. You are required to learn the basics of raster and vector digital art production (2D or 3D), but beyond that, it's completely up to you what kind of art styles, mediums, and themes you want to explore. For each of the 4 main projects you will choose a goal and follow a personalized study plan that will lead you to creating all of the art.</p>
+                            <p>Possible areas of study:</p>
+                            <ul>
+                                <li>Art fundamentals
+                                    <ul>
+                                        <li>Light and color</li>
+                                        <li>Graphical projections</li>
+                                        <li>Composition</li>
+                                        <li>Animation</li>
+                                    </ul>
+                                </li>
+                                <li>Design process
+                                    <ul>
+                                        <li>Art direction</li>
+                                        <li>Concept art</li>
+                                    </ul>
+                                </li>
+                                <li>Art mediums
+                                    <ul>
+                                        <li>Pixel art</li>
+                                        <li>Voxel art</li>
+                                        <li>Vector art</li>
+                                        <li>3D modeling</li>
+                                        <li>Traditional drawing</li>
+                                        <li>Digital painting</li>
+                                        <li>Shader programming and visual effects</li>
+                                    </ul>
+                                </li>
+                                <li>Subjects
+                                    <ul>
+                                        <li>Landscapes</li>
+                                        <li>Vegetation</li>
+                                        <li>Architecture</li>
+                                        <li>Interiors</li>
+                                        <li>Items</li>
+                                        <li>Vehicles</li>
+                                        <li>Characters</li>
+                                        <li>Animals</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </article>
+                        <article>
+                            <h4>Tools and software</h4>
+                            <p>Similarly to how you will be free to choose your own art style, you will be able to choose the tools you want to make your art with, both digital and traditional. You will be responsible for obtaining your own software and hardware, but we made sure all the assignments can be completed with free software, a mouse, some paper, and a pencil. Any extra hardware (graphic tablets and displays, pens, art markers …) or paid software is optional and only required if you decide to pursue certain art styles. The school will have some art materials available, but if you have your own art supplies, definitely bring them along.</p>
+                        </article>
+                    </section>
+            </div>
+        </div>
+
+        <!-- Scripts & Miscallenous -->
+
+        <!-- Hamburger Menu Script -->
+        <script src="scripts/menu.js"></script>
+
+        <!-- Dynamic Background Script -- has to be here so the DOM is loaded beforehand! -->
+        <script src="scripts/background.js"></script>
+    </body>
+</html>

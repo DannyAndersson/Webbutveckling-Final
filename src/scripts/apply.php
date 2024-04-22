@@ -19,13 +19,13 @@ $data = [
 $dateTime = date('Y-m-d_H-i-s');
 
 // put it in the applications directory. feel free to change
-$filePath = "/applications/{$dateTime}.json";
+$filePath = "applications/{$dateTime}.json";
 
 // jsonify
 $jsonData = json_encode($data, JSON_PRETTY_PRINT);
 
 // does our applications directory exist? if not, create it
-$dirPath = '/applications';
+$dirPath = 'applications';
 if (!is_dir($dirPath)) {
     mkdir($dirPath, 0777, true); // create the directory. i think this only works on linux
 }
@@ -33,7 +33,7 @@ if (!is_dir($dirPath)) {
 // write the file
 file_put_contents($filePath, $jsonData);
 
-// yippee.
-echo 'Application submitted!';
+// yippee. redirect to the confirmation page
+header('Location: /submitted.html');
 exit();
 ?>
