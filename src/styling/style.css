@@ -1,0 +1,56 @@
+/*
+    - Styling guidelines & pallettes - 
+    #E8E1D5 - Content background
+    #000000 - Content outline
+    #A08A68 - Border/Logo Outline
+    #E5BE7B - Header/Footer
+    #FFD800 - Accent
+*/
+
+/* Body */
+body {
+    /*background-image: url('resources/background1.png');  -- Deprecated, we use dynamic backgrounds in background.js */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/* Main content */
+.main-flex-container {
+    display: block;
+    text-align: center;
+}
+
+.main-flex{
+    display: flex;
+    flex-wrap: wrap;
+    width: 97%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+article{
+    flex-grow: 1;
+    margin-right: 10px; /* Add margin between info boxes */
+    background-color: #E8E1D5;
+    border: 4px solid #A08A68;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+article iframe{
+    width: 50%;
+    height: 315px;
+}
+
+/* General styling */
+.no-margin p{
+    margin: 0;
+}

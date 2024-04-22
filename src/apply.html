@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Indie Quest - Apply</title>
+        <link rel="stylesheet" type="text/css" href="styling/style.css">    <!-- Generic stylesheet -->
+        <link rel="stylesheet" type="text/css" href="styling/header-style.css">
+        <link rel="stylesheet" type="text/css" href="styling/apply.css">   <!-- Specific stylesheet for this page -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Google Fonts Preconnect -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!-- End Google Fonts -->
+    </head>
+    <body>
+        <div class="background-cover">
+            <!-- Header -->
+            <!-- Desktop header, used for larger screens -->
+            <header class="header-desktop">
+                <div class="header-content-flex">
+                    <a href="index.html"><img src="resources/Logo.png" alt="Logo" class="header-logo"></a>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="curriculum.html">Curriculum</a></li>
+                        <li><a href="findus.html">Find Us</a></li>
+                        <li><a href="apply.html">Apply</a></li>
+                    </ul>
+                </div> 
+            </header>
+
+            <!-- Mobile header, used for smaller screens -->
+            <header class="header-mobile">
+                <div class="header-content-block">
+                    <div class="header-content-flex">
+                        <a href="index.html"><img src="resources/Logo.png" alt="Logo" class="header-logo"></a>
+                        <!--  Hamburger menu button -->
+                        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()"><button class="hamburger-menu-button">&#9776;</button></a>
+                    </div>
+                    <div id="mobile-menu-item" class="mobile-menu-item">
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Curriculum</a></li>
+                            <li><a href="#">Find Us</a></li>
+                            <li><a href="#">Apply</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <!-- End Header -->
+
+            <!-- Main Section -->
+            <div class="main-flex-container">
+                <div class="main-flex">
+                    <article class="bigger">
+                        <h1>Apply</h1>
+                        <h3>We're very glad you're interested in our program!</h3>
+
+                        <!-- Form for applying to the school -->
+                        <form action="scripts/apply.php" method="post">
+                            <!-- Personnummer (required, 12 digits) -->
+                            <label for="personnummer">Personnummer (ÅÅÅÅMMDDXXXX):*</label>
+                            <input type="text" id="personnummer" name="personnummer" pattern="\d{12}" required>
+                            <br><br>
+                    
+                            <!-- name1 (required, text field) -->
+                            <label for="fornamn">Förnamn:*</label>
+                            <input type="text" id="fornamn" name="fornamn" required>
+                            <br><br>
+                    
+                            <!-- name2 (required, text field) -->
+                            <label for="efternamn">Efternamn:*</label>
+                            <input type="text" id="efternamn" name="efternamn" required>
+                            <br><br>
+                    
+                            <!-- c/o (optional, text field) -->
+                            <label for="co">c/o:</label>
+                            <input type="text" id="co" name="co">
+                            <br><br>
+                    
+                            <!-- address (required, text field) -->
+                            <label for="adress">Adress:*</label>
+                            <input type="text" id="adress" name="adress" required>
+                            <br><br>
+                    
+                            <!-- postal code (required, 5 digits) -->
+                            <label for="postnummer">Postnummer:*</label>
+                            <input type="text" id="postnummer" name="postnummer" pattern="\d{5}" required>
+                            <br><br>
+                    
+                            <!-- town (required, text field) -->
+                            <label for="ort">Ort:*</label>
+                            <input type="text" id="ort" name="ort" required>
+                            <br><br>
+                    
+                            <!-- phone (optional, phone number format) -->
+                            <label for="telefon">Telefon:</label>
+                            <input type="tel" id="telefon" name="telefon" pattern="\d{10,13}">
+                            <br><br>
+                    
+                            <!-- E-post (optional, email format) -->
+                            <label for="email">E-post:</label>
+                            <input type="email" id="email" name="email">
+                            <br><br>
+                    
+                            <!-- This is an a separate div to make the buttons appear closer together -->
+                            <label>Hur vill du bli kontaktad?*</label><br>
+                                <div class="contact-methods">
+                                <input type="radio" id="kontakt-telefon" name="kontakt" value="telefon" required>
+                                <label for="kontakt-telefon">Telefon</label><br>
+                                <input type="radio" id="kontakt-e-post" name="kontakt" value="e-post">
+                                <label for="kontakt-e-post">E-post</label><br>
+                                <input type="radio" id="kontakt-sms" name="kontakt" value="sms">
+                                <label for="kontakt-sms">SMS</label><br><br>
+                            </div>
+                    
+                            <!-- Same as above, but for the radio buttons -->
+                            <label>Medborgarskap:*</label><br>
+                            <div class="medborgarskap-div">
+                                <input type="radio" id="medborgarskap-svensk" name="medborgarskap" value="svensk" required>
+                                <label for="medborgarskap-svensk">Svensk</label><br>
+                                <input type="radio" id="medborgarskap-annat" name="medborgarskap" value="annat">
+                                <label for="medborgarskap-annat">Annat</label><br> <!-- if selected, invokes func in apply.js to show text field -->
+                            </div>
+                    
+                            <!-- shown conditionally based on citizenship selection -->
+                            <div id="annat-land" style="display: none;">
+                                <label for="land">Ange land:</label>
+                                <input type="text" id="land" name="land">
+                            </div>
+                    
+                            <br><br>
+                    
+                            <!-- Submit -->
+                            <input type="submit" value="Skicka">
+                        </form>
+                    </article>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scripts & Miscallenous -->
+
+        <!-- Script to assist the application form -->
+        <script src="scripts/apply.js"></script>
+
+        <!-- Hamburger Menu Script -->
+        <script src="scripts/menu.js"></script>
+
+        <!-- Dynamic Background Script -- has to be here so the DOM is loaded beforehand! -->
+        <script src="scripts/background.js"></script>
+    </body>
+</html>
