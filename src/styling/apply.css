@@ -9,6 +9,11 @@
     #FFD800 - Accent
 */
 
+.main-flex{
+    align-content: center;
+    justify-content: center;
+}
+
 article{
     display: flex;
     flex-direction: column;
@@ -20,82 +25,8 @@ article{
     margin: 10px;
     border-radius: 10px;
     text-align: center;
-
+    flex-grow: 0.35;
 }
-
-/*
-                            <!-- Personnummer (required, 12 digits) -->
-                            <label for="personnummer">Personnummer (ÅÅÅÅMMDD-XXXX):</label>
-                            <input type="text" id="personnummer" name="personnummer" pattern="\d{12}" required>
-                            <br><br>
-                    
-                            <!-- Förnamn (required, text field) -->
-                            <label for="fornamn">Förnamn:</label>
-                            <input type="text" id="fornamn" name="fornamn" required>
-                            <br><br>
-                    
-                            <!-- Efternamn (required, text field) -->
-                            <label for="efternamn">Efternamn:</label>
-                            <input type="text" id="efternamn" name="efternamn" required>
-                            <br><br>
-                    
-                            <!-- c/o (optional, text field) -->
-                            <label for="co">c/o:</label>
-                            <input type="text" id="co" name="co">
-                            <br><br>
-                    
-                            <!-- Adress (required, text field) -->
-                            <label for="adress">Adress:</label>
-                            <input type="text" id="adress" name="adress" required>
-                            <br><br>
-                    
-                            <!-- Postnummer (required, 5 digits) -->
-                            <label for="postnummer">Postnummer (5 siffror):</label>
-                            <input type="text" id="postnummer" name="postnummer" pattern="\d{5}" required>
-                            <br><br>
-                    
-                            <!-- Ort (required, text field) -->
-                            <label for="ort">Ort:</label>
-                            <input type="text" id="ort" name="ort" required>
-                            <br><br>
-                    
-                            <!-- Telefon (optional, phone number format) -->
-                            <label for="telefon">Telefon:</label>
-                            <input type="tel" id="telefon" name="telefon" pattern="\d{10,13}">
-                            <br><br>
-                    
-                            <!-- E-post (optional, email format) -->
-                            <label for="email">E-post:</label>
-                            <input type="email" id="email" name="email">
-                            <br><br>
-                    
-                            <!-- Hur vill du bli kontaktad? (required, multi-choice checkboxes) -->
-                            <label>Hur vill du bli kontaktad?</label><br>
-                            <input type="checkbox" id="kontakt-telefon" name="kontakt" value="telefon" required>
-                            <label for="kontakt-telefon">Telefon</label><br>
-                            <input type="checkbox" id="kontakt-e-post" name="kontakt" value="e-post">
-                            <label for="kontakt-e-post">E-post</label><br>
-                            <input type="checkbox" id="kontakt-sms" name="kontakt" value="sms">
-                            <label for="kontakt-sms">SMS</label><br><br>
-                    
-                            <!-- Medborgarskap (required, 2 radio buttons) -->
-                            <label>Medborgarskap:</label><br>
-                            <input type="radio" id="medborgarskap-svensk" name="medborgarskap" value="svensk" required>
-                            <label for="medborgarskap-svensk">Svensk</label><br>
-                            <input type="radio" id="medborgarskap-annat" name="medborgarskap" value="annat">
-                            <label for="medborgarskap-annat">Annat</label><br>
-                    
-                            <!-- Text field shown conditionally based on radio selection -->
-                            <div id="annat-land" style="display: none;">
-                                <label for="land">Ange land:</label>
-                                <input type="text" id="land" name="land">
-                            </div>
-                    
-                            <br><br>
-                    
-                            <!-- Submit Button -->
-                            <input type="submit" value="Skicka">
-                            */
 
 /* Container for the entire form */
 form {

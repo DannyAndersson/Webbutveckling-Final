@@ -4,11 +4,11 @@
 
 // Define an array with the background image URLs
     const backgrounds = [
-        'resources/background1.png',
-        'resources/background2.png',
-        'resources/background3.png',
-        'resources/background4.png',
-        'resources/background5.png'
+        'resources/background1-lq.jpg',
+        'resources/background2-lq.jpg',
+        'resources/background3-lq.jpg',
+        'resources/background4-lq.jpg',
+        'resources/background5-lq.jpg'
     ];
 
     // Get a random index to select a background

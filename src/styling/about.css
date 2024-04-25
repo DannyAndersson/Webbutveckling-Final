@@ -1,0 +1,40 @@
+/* Since there's more text here, align it to the left for readability. */
+article p{
+    text-align: left;
+}
+
+article img{
+    width: 100%;
+    height: auto;
+}
+
+article iframe{
+  width: 100%;
+  height: 100%;
+}
+
+article .large-image{
+    width: 80%;
+    height: auto;
+}
+
+.small-text-container{
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  font-style: italic;
+}
+
+/* Media queries for desktop, about page. */
+@media (min-width: 768px) {
+    .smaller{
+      flex-basis: calc(23.33% - 10px); /* 33.33% width for each info box with margin */
+    }
+    .bigger{
+        flex-basis: calc(46.66% - 10px); /* 66.66% width for each info box with margin */
+    }
+    article img{
+      width: 20%;
+      height: auto;
+    }    
+}

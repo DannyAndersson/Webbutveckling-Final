@@ -28,6 +28,10 @@ section{
     border-radius: 10px;
     text-align: left;
 }
+.section-header:hover{
+    cursor: pointer;
+
+}
 
 .section-header h1 {
     font-size: 24px;

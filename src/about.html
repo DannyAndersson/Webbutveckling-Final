@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Indie Quest - About</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="styling/style.css">    <!-- Generic stylesheet -->
+        <link rel="stylesheet" type="text/css" href="styling/header-style.css">
+        <link rel="stylesheet" type="text/css" href="styling/about.css">   <!-- Specific stylesheet for this page -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Google Fonts Preconnect -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!-- End Google Fonts -->
+    </head>
+    <body>
+        <div class="background-cover">
+            <!-- Header -->
+            <!-- Desktop header, used for larger screens -->
+            <header class="header-desktop">
+                <div class="header-content-flex">
+                    <a href="index.html"><img src="resources/Logo.png" alt="Logo" class="header-logo"></a>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="curriculum.html">Curriculum</a></li>
+                        <li><a href="findus.html">Find Us</a></li>
+                        <li><a href="apply.html">Apply</a></li>
+                    </ul>
+                </div> 
+            </header>
+
+            <!-- Mobile header, used for smaller screens -->
+            <header class="header-mobile">
+                <div class="header-content-block">
+                    <div class="header-content-flex">
+                        <a href="index.html"><img src="resources/Logo.png" alt="Logo" class="header-logo"></a>
+                        <!--  Hamburger menu button -->
+                        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()"><button class="hamburger-menu-button">&#9776;</button></a>
+                    </div>
+                    <div id="mobile-menu-item" class="mobile-menu-item">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="curriculum.html">Curriculum</a></li>
+                            <li><a href="findus.html">Find Us</a></li>
+                            <li><a href="apply.html">Apply</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <!-- End Header -->
+
+            <!-- Main Section -->
+            <div class="main-flex-container">
+                <div class="main-flex">
+                    <article class="bigger">
+                        <img src="resources/note1.png" alt="Note image saying 'Day & Night Cycle'">
+                        <img src="resources/note2.png" alt="Note image saying 'Cooking mechanic'" class="no-mobile"> <!-- This image is hidden on mobile to save space -->
+                        <h1>Learn indie game development</h1>
+                        <p>The Indie Quest is a course in programming, art, and production, specifically designed for creating indie games. Instead of studying individual subjects in isolation, you acquire the skills directly by using them on game projects.</p>
+                        <p>You will first become an apprentice, completing carefully designed game coding missions that will build your programming knowledge step-by-step. You will then extend these foundations by learning advanced concepts while creating your own games. Applying project management strategies will help you prototype your ideas and polish the end result to share your games with the world.</p>
+                        <p>On the art side of things you will choose any visual style that you want for your games. A study plan personalized for your goals will guide you through the art fundamentals and technical aspects required to bring your vision to life. Be it pixel art, 3D, traditional drawing, or digital painting, we have you covered.</p>
+                        <p>Learn more about the curriculum <a href="curriculum.html">here</a>!</p>
+                    </article>
+                    <article class="bigger">
+                        <img src="resources/teaching-lq.jpg" alt="About" class="large-image">
+                        <div class="small-text-container"><p>Example image, Unsplash.</p></div>
+                        <h1>More than a school</h1>
+                        <p>Another unique advantage of The Indie Quest, besides the specialized curriculum, is learning and working within a community of many professional indie game developers. Spelkollektivet, where the school takes place, is the largest co-living and co-working space for game developers from all over the world. You will be part of a friendly, supportive community that shares the love for gaming and creating games, including all the social and professional development activities that happen in the house.</p>
+                        <p>Learn more about Spelkollektivet <a href="https://www.spelkollektivet.com">here</a>!</p>
+                    </article>
+                    <article class="bigger">
+                        <img src="resources/map.png" alt="Map" class="about-image">
+                        <h1>The way we teach</h1>
+                        <p>There are no exams in our school. You will not have to write project reports or memorize theory. All that matters is what you are able to create and your completed games will demonstrate that.</p>
+                        <p>We use the flipped classroom model to make sure you get all the help you need to master your skills. Instead of listening to a teacher lecturing everyone at the same speed, you will use online educational materials to learn at your own pace. Some concepts might take longer to conquer, other times you will breeze ahead. The teacher will be there to answer any specific questions and help you individually when you need it.</p>
+                        <p>You will share an office space with other students and a teacher so you can learn and create in a supportive environment. Daily stand-up meetings will kick off the workday and weekly group check-ins will make sure everyone is reaching their goals.</p>
+                    </article>
+                    <article class="smaller">
+                        <iframe src="https://www.youtube.com/embed/bAKyYeMZvKg" title="The Indie Quest YouTube Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </article>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scripts & Miscallenous -->
+
+        <!-- Hamburger Menu Script -->
+        <script src="scripts/menu.js"></script>
+
+        <!-- Dynamic Background Script -- has to be here so the DOM is loaded beforehand! -->
+        <script src="scripts/background.js"></script>
+    </body>
+</html>
