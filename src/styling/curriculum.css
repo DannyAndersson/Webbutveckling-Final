@@ -1,72 +1,43 @@
-/* This page is kind of messy, so let's start with a clean slate. Make sure the header style goes AFTER this. */
-* { 
-    margin: 0;
-    padding: 0;
+*{
     box-sizing: border-box;
 }
 
 /* Main container styles */
-.main-flex-container {
-    display: block;
-    text-align: center;
+.main-flex {
     margin-top: 1%;
+    justify-content: center;
 }
 
+/* Sections are collapsible on this page. */
 section{
     display: block;
     width: 97%;
     justify-content: space-between;
 }
 
-/* Section header styles */
+/* Section header is clicked to reveal/hide sections. */
 .section-header {
-    background-color: #E8E1D5;
-    padding: 10px;
-    border: 2px solid #A08A68;
-    margin-bottom: 10px;
     width:100%;
+
+    padding: 10px;
+    margin-bottom: 10px;
+
+    border: 4px solid #A08A68;
     border-radius: 10px;
+    
     text-align: left;
+    background-color: #E8E1D5;
 }
 .section-header:hover{
-    cursor: pointer;
-    
+    cursor: pointer; /* Change cursor to pointer on hover so they know it's clickable */
 }
 
+/* Header text sizes */
 .section-header h1 {
     font-size: 24px;
 }
-
 .section-header h3 {
     font-size: 16px;
-}
-
-/* Article styles */
-article {
-    border: 2px solid #A08A68;
-    background-color: #E8E1D5;
-    padding: 10px;
-    margin-bottom: 10px;
-    text-align: left;
-    border-radius: 10px;
-}
-
-article h3 {
-    font-size: 20px;
-    margin-bottom: 5px;
-}
-
-article p {
-    margin-bottom: 10px;
-}
-
-article ul {
-    margin-bottom: 10px;
-}
-
-article ul li {
-    list-style-type: disc;
-    margin-left: 20px;
 }
 
 /* Hide collapsible sections by default */
@@ -85,7 +56,29 @@ article ul li {
     margin-bottom: 10px;
 }
 
-/* Style for the expanded state */
+/* Style for the expanded state, this is applied to sections when their headers are clicked */
 .collapsible-expanded {
     display: block;
+}
+
+/* Articles are children of sections, they contain the actual data */
+article {
+    padding: 10px;
+    margin-bottom: 10px;
+
+    border: 2px solid #A08A68;
+    border-radius: 10px; /* style guidelines */
+
+    text-align: left;
+    background-color: #E8E1D5;
+}
+
+/* UL was slightly too far from the article bottom */
+article ul {
+    margin-bottom: 10px;
+}
+
+/* increase list margin to left side */
+article ul li {
+    margin-left: 20px;
 }

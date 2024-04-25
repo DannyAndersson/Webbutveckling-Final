@@ -1,22 +1,35 @@
+*{
+    box-sizing: border-box;
+}
 
-.contact-info{
-    display: flex;
-    justify-content: left;
+.main-flex{
+    justify-content: center;
 }
+
+/* Contact info article */
+/* Reset list style */
 .contact-info ul{
-    list-style-type: none;
     padding: 0;
+
+    list-style-type: none;
 }
+
 .contact-info ul li{
     display: flex;
-    align-items: center;
     padding: 10px;
+
+    align-items: center;
+    
 }
+
+/* Not very happy about this. Set the image size to 50x50px */
 .contact-info ul li img{
     width: 50px;
     height: 50px;
     margin-right: 10px;
 }
+
+/* Reset a tag styling. */
 .contact-info ul li a{
     text-decoration: none;
     color: #000000;
@@ -25,6 +38,11 @@
 
 /* Media queries for desktop, find us page. */
 @media (min-width: 768px) {
+    /*  
+        We use "smaller" and "bigger" classes to set the width of the article boxes in relation to each other. 
+        This is to make the page look more visually appealing and fit more content on the screen.
+        We assign flex-basis on a per-page basis based on what fits the content best.
+    */
     .smaller{
       flex-basis: calc(5.00% - 10px); /* 33.33% width for each info box with margin */
     }
@@ -36,17 +54,17 @@
 /* Media queries for mobile, find us page. */
 @media (max-width: 768px) {
     .contact-info {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         text-align: left;
     }
     
     .contact-info ul li a {
-        text-decoration: none;
-        color: #000000;
         word-break: break-all; /* This caused me a lot of trouble. */
-        font-size: 18px;
+        font-size: 18px;       /* Decrease font size because the screen is teeny. */
+    }
+
+    .main-flex{
+        /* For some reason, the flexbox is not centered on mobile. */
+        box-sizing: border-box;
     }
     
 }

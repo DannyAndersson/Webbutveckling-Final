@@ -44,11 +44,15 @@ Nothing to report - happy days!
         FIXED 2024-04-25
         Fixed by adding a new query to header-style.css which adjusts the margin if we're under a certain screen width.
         This is kind of a janky solution but it works for now. Might revisit later. Don't know.
+        ADDENDUM 2024-04-25
+        I revisited it and opted to just get rid of the query and adjust the first query to match more screens.
 
 [Low]
-2 - UNSOLVED:
+2 - SOLVED:
     Not necessarily a bug, but we're not practicing good development habits. Class names are nonsensical,
     and we're not using semantic HTML. This will need to be fixed before the final submission.
     File: All. "Found" 2024/04/22.
+        FIXED 2024-04-25
+        I looked up what semantic HTML is and apparnetly I *had* been using it for a while. Hurray?
 
 _______________________________________________________________________________________________________________________

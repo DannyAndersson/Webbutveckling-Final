@@ -34,61 +34,43 @@ form {
     border-radius: 10px; /* Rounded corners in accordance with style guidelines - 10px. */
 }
 
-/* Text fields and other input fields */
+/* Styling for the text form fields */
 form input[type="text"],
 form input[type="tel"],
 form input[type="email"] {
-    padding: 10px; /* Padding inside text fields */
-    border: 2px solid #A08A68; /* Border color */
-    border-radius: 5px; /* Rounded corners */
-    width: 70%; /* Adjusted width for a better layout */
+    padding: 10px; 
+    border: 2px solid #A08A68; 
+    border-radius: 5px; 
+    width: 76%; 
     margin-bottom: 20px; /* Space between input fields */
 }
 
-/* Radio buttons and checkboxes */
-.radio-checkbox-group {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px; /* Space between radio buttons/checkboxes */
-}
-
-/* Labels for radio buttons and checkboxes */
-form input[type="radio"],
-form input[type="checkbox"] {
-    margin-right: 8px; /* Space between button/checkbox and label */
-}
-
-/* Accent coloring for submit button */
+/* Submit button */
 form input[type="submit"] {
-    background-color: #E5BE7B; /* Accent color */
-    color: #000000; /* Contrasting text color */
-    border: none; /* No border for the submit button */
     padding: 10px 20px; /* Padding for button */
+    margin-top: 20px; 
+
+    cursor: pointer;
+
+    border-radius: 10px;
+
     font-size: 16px; /* Larger font size for better readability */
     font-weight: bold; /* Bold text for emphasis */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer;
-    margin-top: 20px; 
+
+    background-color: #E5BE7B;  /* Light background colour */
+    color: #000000;             
 }
 
 /* Hover effect for the submit button */
 form input[type="submit"]:hover {
-    background-color: #FFD800; /* Slightly darker shade on hover */
+    background-color: #FFD800; /* Change to accent colour */
 }
 
 /* Style for the conditional field (hidden by default) */
 #annat-land {
-    display: none; /* Initially hidden */
-    margin-top: 15px; /* Space above the conditional field */
+    display: none;      /* Initially hidden, shown by apply.js if "Medborgarskap: Annat" is selected */
+    margin-top: 15px;   /* Space above the conditional field */
 }
-
-/* Specific style for the header */
-h2 {
-    color: #E5BE7B; /* Matching header/footer color */
-    font-size: 24px; /* Larger font size for the header */
-}
-
 
 /* Media queries for desktop, apply page. */
 @media (min-width: 768px) {
@@ -100,6 +82,6 @@ h2 {
 /* Media queries for mobile, apply page. */
 @media (max-width: 768px) {
     form {
-        width: 80%;
+        width: 80%; /* mobile has a lot less space to work with, so occupy more of the screen */
     }
 }

@@ -27,12 +27,19 @@ article .large-image{
 
 /* Media queries for desktop, about page. */
 @media (min-width: 768px) {
+  /* 
+      We use "smaller" and "bigger" classes to set the width of the article boxes in relation to each other. 
+      This is to make the page look more visually appealing and fit more content on the screen.
+      We assign flex-basis on a per-page basis based on what fits the content best.
+  */
   .smaller{
     flex-basis: calc(23.33% - 10px); /* 33.33% width for each info box with margin */
   }
   .bigger{
     flex-basis: calc(46.66% - 10px); /* 66.66% width for each info box with margin */
   }
+
+  /* on desktop, the image is too big. fix it. */
   article img{
     width: 20%;
     height: auto;

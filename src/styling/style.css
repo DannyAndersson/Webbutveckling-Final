@@ -5,57 +5,76 @@
 #A08A68 - Border/Logo Outline
 #E5BE7B - Header/Footer
 #FFD800 - Accent
+
+Border radius: 10px
+Border width (square): 4px
+Font: Montserrat, sans-serif
 */
+
+/* These styles are used over the entire site, unless overridden by page-specific ones */
 
 /* Body */
 body {
-    /*background-image: url('resources/background1.png');  -- Deprecated, we use dynamic backgrounds in background.js */
+    margin: 0;
+    padding: 0;
+
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    margin: 0;
-    padding: 0;
+    
     font-family: "Montserrat", sans-serif;
 }
 
 
 /* Main content */
-.main-flex-container {
-    display: block;
-    text-align: center;
-}
-
 .main-flex{
-    display: flex;
-    flex-wrap: wrap;
     width: 97%;
     margin: 0 auto;
+
     justify-content: space-between;
+
+    display: flex;      
+    flex-wrap: wrap;
+    /* 
+        This is basically my stand-in for responsive design. The main content is a flex container. 
+        On small screens, the sections and articles which are children of the main content will
+        have their flex-basis changed so that they appear in a single column.
+        Should I just be setting the flex-direction to column instead? Probably! This works, though,
+        and it allows for more dynamic styling. If you really don't like it, I can change it.
+    */
 }
 
 article{
-    flex-grow: 1;
-    margin-right: 0px; /* Add margin between info boxes */
-    background-color: #E8E1D5;
-    border: 4px solid #A08A68;
     padding: 10px;
     margin: 10px;
-    border-radius: 10px;
+    margin-right: 0px; /* Add margin between info boxes */
+
+    flex-grow: 1;   /* This causes the article to take up the full width of the container even if it doesn't need to, for a grid-like appearance */
+    border: 4px solid #A08A68;
+
+    border-radius: 10px; /* 10px as always */
     
+    background-color: #E8E1D5;
+
     text-align: center;
 }
 
+/* YouTube video styling */
 article iframe{
     width: 50%;
     height: 248px;
 }
 
-/* General styling */
+/* 
+    General styling below
+*/
+
+/* Disables margin */
 .no-margin p{
     margin: 0;
 }
 
-/* Hide on mobile */
+/* Hides element on mobile */
 @media (max-width: 768px) {
     .no-mobile{
         display: none;
