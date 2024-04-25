@@ -18,15 +18,23 @@ When fixed:
 _______________________________________________________________________________________________________________________
 
 [Urgent]
-Nothing to report - happy days!
+3 - SOLVED:
+    Curriculum page is a god damn mess. I have no idea why. Found 2024/04/24.
+    File: curriculum.html.
+        FIXED 2024-04-25
+        Conflicting margin/padding data caused by the general style.css file. 
+        Fixed by overriding margin data in the curriculum.css file.
 
 [High]
 Nothing to report - happy days!
 
 [Medium]
-1 - UNSOLVED:
+1 - "SOLVED":
     Header flexbox not working as expected on index.html on "inbetween" screen sizes.
     File: index.html, found 2024/04/22.
+        FIXED 2024-04-25
+        Fixed by adding a new query to header-style.css which adjusts the margin if we're under a certain screen width.
+        This is kind of a janky solution but it works for now. Might revisit later. Don't know.
 
 [Low]
 2 - UNSOLVED:

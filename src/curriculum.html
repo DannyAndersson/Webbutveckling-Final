@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>The Indie Quest</title>
+        <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="styling/style.css">    <!-- Generic stylesheet -->
         <link rel="stylesheet" type="text/css" href="styling/header-style.css">
         <link rel="stylesheet" type="text/css" href="styling/curriculum.css">   <!-- Specific stylesheet for this page -->
@@ -50,13 +51,15 @@
             <!-- End Header -->
 
             <!-- Main Section -->
-            <h1>FINALLY READING HOUSE OF LEAVES:</h1>
             <div class="main-flex-container">
                 <div class="main-flex">
                     <!-- Dropdowns -->
                     <section> <!-- Programming & Production -->
-                        <h1>Programming & Production</h1>
-                        <h3>Our program is divided into 5 sections, intended to be covered in 1 year of full-time study.</h3>
+                        <div class="section-header">
+                            <h1>► Programming & Production</h1>
+                            <h3>Our program is divided into 5 sections, intended to be covered in 1 year of full-time study.</h3>
+                        </div>
+                        <div class="section-collapsible">
                         <article>
                             <h4>1. Preparation</h4>
                             <p>The Indie Quest requires no previous experience in programming. Through carefully designed missions, you will conquer the basics of programming by coding individual aspects of games. You will learn how computers work and touch on other aspects of computer science, such as computational thinking and algorithm design, so that you will have the foundation to tackle any programming problems thrown your way. Skills covered:</p>
@@ -125,17 +128,27 @@
                                 <li>Marketing</li>
                                 <li>Publishing</li>
                             </ul>
+                        </div>
                     </section>
                     <section> <!-- Tools & languages-->
-                        <h1>Tools & Languages</h1>
+                        <div class="section-header">
+                            <h1>► Tools & Languages</h1>
+                            <h3>What you will learn and use during the program.</h3>
+                        </div>
+                        <div class="section-collapsible">
                         <article>
                             <p>The concepts you will learn in the first two sections of the programming curriculum will be highly universal and applicable to any kind of programming tasks, in and outside video games. Sections 3–5 will be specific to game development, but giving you a high-level understanding of how games work that can be applied to any game type and approach.</p>
                             <p>To make teaching practical however, we had to choose a specific programming language and game engine around which to organize the learning materials. We chose Unity since it is the most popular engine in indie game development and one you are most likely to encounter when trying to collaborate with other indie developers. Based on this decision, C# was the logical choice for the programming language.</p>
                             <p>While some of the concepts common in the gaming industry will not be covered due to this choice (for example, pointers and manual memory management), you will receive enough low-level knowledge about how computers work that you will not have problems moving to C or C++ if you choose to afterwards. Learning a specific programming language is not the hard part and a skilled programmer with understanding of general concepts has no problem switching and learning a new programming language. Similarly, moving from Unity to another engine will not be hard if you decide to do so.</p>
                         </article>
+                        </div>
                     </section>
                     <section> <!-- Art & Design -->
-                        <h1>Art & Design</h1>
+                        <div class="section-header">
+                            <h1>► Art & Design</h1>
+                            <h3>What you'll learn about art and design.</h3>
+                        </div>
+                        <div class="section-collapsible">
                         <article>
                             <p>The art curriculum runs in parallel with programming and production and serves to create all the necessary art assets for the projects. You are required to learn the basics of raster and vector digital art production (2D or 3D), but beyond that, it's completely up to you what kind of art styles, mediums, and themes you want to explore. For each of the 4 main projects you will choose a goal and follow a personalized study plan that will lead you to creating all of the art.</p>
                             <p>Possible areas of study:</p>
@@ -183,6 +196,7 @@
                             <h4>Tools and software</h4>
                             <p>Similarly to how you will be free to choose your own art style, you will be able to choose the tools you want to make your art with, both digital and traditional. You will be responsible for obtaining your own software and hardware, but we made sure all the assignments can be completed with free software, a mouse, some paper, and a pencil. Any extra hardware (graphic tablets and displays, pens, art markers …) or paid software is optional and only required if you decide to pursue certain art styles. The school will have some art materials available, but if you have your own art supplies, definitely bring them along.</p>
                         </article>
+                        </div>
                     </section>
             </div>
         </div>
@@ -194,5 +208,8 @@
 
         <!-- Dynamic Background Script -- has to be here so the DOM is loaded beforehand! -->
         <script src="scripts/background.js"></script>
+
+        <!-- Collapsible segments script -->
+        <script src="scripts/curriculumcollaps.js"></script>
     </body>
 </html>
