@@ -17,7 +17,7 @@ This will include only the final files to be delivered to the hypothetical clien
 
 # Dependencies
 - [PHP](https://www.php.net/)
-- [Pepsi](https://pepsi.com/)
 
 # Attributions
-None to speak of. Yet.
+[Teacher image from Unsplash, Public Domain.](https://unsplash.com/photos/a-woman-explaining-something-to-a-group-of-people-XH8chLuj02g)
+All miscellaneous assets from Christoffer Cederholm and The Indie Quest / Spelkollektivet who provided them for this project.
