@@ -1,10 +1,10 @@
 /*
-    - Styling guidelines & pallettes - 
-    #E8E1D5 - Content background
-    #000000 - Content outline
-    #A08A68 - Border/Logo Outline
-    #E5BE7B - Header/Footer
-    #FFD800 - Accent
+- Styling guidelines & pallettes - 
+#E8E1D5 - Content background
+#000000 - Content outline
+#A08A68 - Border/Logo Outline
+#E5BE7B - Header/Footer
+#FFD800 - Accent
 */
 
 /* Header for desktop navbar - occupy full width of page top */
@@ -38,7 +38,7 @@
 
 .header-desktop ul li{
     display: inline;
-    margin: 7.5%;
+    margin: 7.3%;
 }
 
 .header-desktop ul li a{
@@ -108,7 +108,7 @@
 }
 
 /* Query for mobile view */
-@media only screen and (max-width: 855px) {
+@media only screen and (max-width: 1364px) {
     .header-desktop{
         display: none;
     }
@@ -118,7 +118,7 @@
 }
 
 /* Query for desktop view */
-@media only screen and (min-width: 856px) {
+@media only screen and (min-width: 1365px) {
     .header-desktop{
         display: block;
     }
@@ -128,7 +128,7 @@
 }
 
 /* Query for general small screens but not mobile */
-@media only screen and (max-width: 1418px) {
+@media only screen and (max-width: 1365px) {
     .header-desktop ul li{
         margin: 3.5%;
     }

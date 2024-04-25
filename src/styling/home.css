@@ -1,9 +1,9 @@
 /* Media queries for desktop, home page. */
 @media (min-width: 768px) {
-    .smaller{
-      flex-basis: calc(23.33% - 10px); /* 33.33% width for each info box with margin */
-    }
-    .bigger{
-        flex-basis: calc(46.66% - 10px); /* 66.66% width for each info box with margin */
-    }
+  .smaller{
+    flex-basis: calc(23.33% - 10px); /* 33.33% width for each info box with margin */
+  }
+  .bigger{
+    flex-basis: calc(46.66% - 10px); /* 66.66% width for each info box with margin */
+  }
 }

@@ -1,91 +1,91 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>The Indie Quest</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="styling/style.css">    <!-- Generic stylesheet -->
-        <link rel="stylesheet" type="text/css" href="styling/header-style.css">
-        <link rel="stylesheet" type="text/css" href="styling/home.css">   <!-- Specific stylesheet for this page -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!-- Google Fonts Preconnect -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <!-- End Google Fonts -->
-    </head>
-    <body>
-        <div class="background-cover">
-            <!-- Header -->
-            <!-- Desktop header, used for larger screens -->
-            <header class="header-desktop">
+<head>
+    <title>The Indie Quest</title>
+    <link rel="stylesheet" type="text/css" href="styling/style.css">    <!-- Generic stylesheet -->
+    <link rel="stylesheet" type="text/css" href="styling/header-style.css">
+    <link rel="stylesheet" type="text/css" href="styling/home.css">   <!-- Specific stylesheet for this page -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" lang="en">
+    <meta charset="UTF-8">
+    
+    <!-- Google Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- End Google Fonts -->
+</head>
+<body>
+    <div class="background-cover">
+        <!-- Header -->
+        <!-- Desktop header, used for larger screens -->
+        <header class="header-desktop">
+            <div class="header-content-flex">
+                <a href="index.html"><img src="resources/Logo.png" alt="Logo" class="header-logo"></a>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="curriculum.html">Curriculum</a></li>
+                    <li><a href="findus.html">Find Us</a></li>
+                    <li><a href="apply.html">Apply</a></li>
+                </ul>
+            </div> 
+        </header>
+        
+        <!-- Mobile header, used for smaller screens -->
+        <header class="header-mobile">
+            <div class="header-content-block">
                 <div class="header-content-flex">
                     <a href="index.html"><img src="resources/Logo.png" alt="Logo" class="header-logo"></a>
+                    <!--  Hamburger menu button -->
+                    <button class="icon hamburger-menu-button" onclick="toggleMenu()">&#9776;</button>
+                </div>
+                <div id="mobile-menu-item" class="mobile-menu-item">
                     <ul>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="curriculum.html">Curriculum</a></li>
                         <li><a href="findus.html">Find Us</a></li>
                         <li><a href="apply.html">Apply</a></li>
                     </ul>
-                </div> 
-            </header>
-
-            <!-- Mobile header, used for smaller screens -->
-            <header class="header-mobile">
-                <div class="header-content-block">
-                    <div class="header-content-flex">
-                        <a href="index.html"><img src="resources/Logo.png" alt="Logo" class="header-logo"></a>
-                        <!--  Hamburger menu button -->
-                        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()"><button class="hamburger-menu-button">&#9776;</button></a>
-                    </div>
-                    <div id="mobile-menu-item" class="mobile-menu-item">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="curriculum.html">Curriculum</a></li>
-                            <li><a href="findus.html">Find Us</a></li>
-                            <li><a href="apply.html">Apply</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </header>
-            <!-- End Header -->
-
-            <!-- Main Section -->
-            <div class="main-flex-container">
-                <div class="main-flex">
-                    <article class="bigger">
-                        <iframe src="https://www.youtube.com/embed/h9L9ZS2zVPc" title="The Indie Quest YouTube Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <h1>A school for indie game development</h1>
-                        <p>The program starts August 16th and you can apply up until June 15th.</p>
-                    </article>
-                    <article class="bigger">
-                        <iframe src="https://www.youtube.com/embed/TlTZBMq0HSo" title="The Indie Quest YouTube Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <h1>Learn from the best</h1>
-                        <p>You're sharing the house with awesome game developers from all over the world. We're a big team that has each other's backs.</p>
-                    </article>
-                    <article class="smaller">
-                        <h1>Learn multiple skill sets</h1>
-                        <p>Once you're done here, you'll be ready to start your own indie studio or continue studying down the path you felt suited you the best.</p>
-                    </article>
-                    <article class="smaller">
-                        <h1>Two years in one year</h1>
-                        <p>Time is precious, and with our program we plan to make the most out of yours. It's going to be a tough but rewarding journey.</p>
-                    </article>
-                    <article class="smaller">
-                        <h1>Personal responsibility</h1>
-                        <p>There's no tests or teachers hunting you. If you're going to succeed, you're going to want to study hard.</p>
-                    </article>
                 </div>
             </div>
+        </header>
+        <!-- End Header -->
+        
+        <!-- Main Section -->
+        <div class="main-flex-container">
+            <div class="main-flex">
+                <article class="bigger">
+                    <iframe src="https://www.youtube.com/embed/h9L9ZS2zVPc" title="The Indie Quest YouTube Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h1>A school for indie game development</h1>
+                    <p>The program starts August 16th and you can apply up until June 15th.</p>
+                </article>
+                <article class="bigger">
+                    <iframe src="https://www.youtube.com/embed/TlTZBMq0HSo" title="The Indie Quest YouTube Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h1>Learn from the best</h1>
+                    <p>You're sharing the house with awesome game developers from all over the world. We're a big team that has each other's backs.</p>
+                </article>
+                <article class="smaller">
+                    <h1>Learn multiple skill sets</h1>
+                    <p>Once you're done here, you'll be ready to start your own indie studio or continue studying down the path you felt suited you the best.</p>
+                </article>
+                <article class="smaller">
+                    <h1>Two years in one year</h1>
+                    <p>Time is precious, and with our program we plan to make the most out of yours. It's going to be a tough but rewarding journey.</p>
+                </article>
+                <article class="smaller">
+                    <h1>Personal responsibility</h1>
+                    <p>There's no tests or teachers hunting you. If you're going to succeed, you're going to want to study hard.</p>
+                </article>
+            </div>
         </div>
-
-        <!-- Scripts & Miscallenous -->
-
-        <!-- Hamburger Menu Script -->
-        <script src="scripts/menu.js"></script>
-
-        <!-- Dynamic Background Script -- has to be here so the DOM is loaded beforehand! -->
-        <script src="scripts/background.js"></script>
-    </body>
+    </div>
+    
+    <!-- Scripts & Miscallenous -->
+    
+    <!-- Hamburger Menu Script -->
+    <script src="scripts/menu.js"></script>
+    
+    <!-- Dynamic Background Script -- has to be here so the DOM is loaded beforehand! -->
+    <script src="scripts/background.js"></script>
+</body>
 </html>

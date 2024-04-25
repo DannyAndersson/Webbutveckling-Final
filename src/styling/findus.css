@@ -1,18 +1,7 @@
-/*
-<article class="smaller contact-info">
-                        <!-- Display a list of contact methods in a list. -->
-                        <ul>
-                            <li><img src="resources/phone-icon.png" alt="Phone icon">+46 123 456 789</li>
-                            <li><img src="resources/email-icon.png" alt="Mail icon">Spelkollektivet@redmail.org</li>
-                        </ul>
-                    </article>
-                    */
-/* Text should appear to the right of icon's center */
 
 .contact-info{
     display: flex;
     justify-content: left;
-    align-items: left;
 }
 .contact-info ul{
     list-style-type: none;
@@ -42,4 +31,22 @@
     .bigger{
         flex-basis: calc(50% - 10px); /* 66.66% width for each info box with margin */
     }
+}
+
+/* Media queries for mobile, find us page. */
+@media (max-width: 768px) {
+    .contact-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+    
+    .contact-info ul li a {
+        text-decoration: none;
+        color: #000000;
+        word-break: break-all; /* This caused me a lot of trouble. */
+        font-size: 18px;
+    }
+    
 }

@@ -1,3 +1,7 @@
+# whoops, i kind of forgot to update this!
+# the website is now finished. this was mostly followed, i just forgot about it.
+# i'll leave it here for posterity, but it's not really useful anymore.
+
 30 hours have been allocated on this project
 200 minutes are allocated per week:
     70 minutes mondays,

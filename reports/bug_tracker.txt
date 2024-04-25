@@ -24,6 +24,15 @@ ________________________________________________________________________________
         FIXED 2024-04-25
         Conflicting margin/padding data caused by the general style.css file. 
         Fixed by overriding margin data in the curriculum.css file.
+4 - SOLVED:
+    findus.html is broken on mobile due to an issue with how its css file handles,
+    or rather doesn't handle, the smaller article.
+    File: findus.html. Found 2024/04/25. 
+        FIXED 2024-04-25
+        It was a problem with the image icons mixed with what I set the minimum font size to.
+        Added new query to finduss.css that appends word-break: break-all; to the article
+        element when the screen width is below a certain threshold. This isn't great,
+        but this took me way too long to figure out and I'm tired of looking at it.
 
 [High]
 Nothing to report - happy days!

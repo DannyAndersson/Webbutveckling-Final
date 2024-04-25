@@ -1,89 +1,100 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>The Indie Quest - Find Us</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="styling/style.css">    <!-- Generic stylesheet -->
-        <link rel="stylesheet" type="text/css" href="styling/header-style.css">
-        <link rel="stylesheet" type="text/css" href="styling/findus.css">   <!-- Specific stylesheet for this page -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!-- Google Fonts Preconnect -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <!-- End Google Fonts -->
-    </head>
-    <body>
-        <div class="background-cover">
-            <!-- Header -->
-            <!-- Desktop header, used for larger screens -->
-            <header class="header-desktop">
+<head>
+    <title>The Indie Quest - Find Us</title>
+    <link rel="stylesheet" type="text/css" href="styling/style.css">    <!-- Generic stylesheet -->
+    <link rel="stylesheet" type="text/css" href="styling/header-style.css">
+    <link rel="stylesheet" type="text/css" href="styling/findus.css">   <!-- Specific stylesheet for this page -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" lang="en">
+    <meta charset="UTF-8">
+    
+    <!-- Google Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- End Google Fonts -->
+</head>
+<body>
+    <div class="background-cover">
+        <!-- Header -->
+        <!-- Desktop header, used for larger screens -->
+        <header class="header-desktop">
+            <div class="header-content-flex">
+                <a href="index.html"><img src="resources/Logo.png" alt="Logo" class="header-logo"></a>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="curriculum.html">Curriculum</a></li>
+                    <li><a href="findus.html">Find Us</a></li>
+                    <li><a href="apply.html">Apply</a></li>
+                </ul>
+            </div> 
+        </header>
+        
+        <!-- Mobile header, used for smaller screens -->
+        <header class="header-mobile">
+            <div class="header-content-block">
                 <div class="header-content-flex">
                     <a href="index.html"><img src="resources/Logo.png" alt="Logo" class="header-logo"></a>
+                    <!--  Hamburger menu button -->
+                    <button class="icon hamburger-menu-button" onclick="toggleMenu()">&#9776;</button>
+                </div>
+                <div id="mobile-menu-item" class="mobile-menu-item">
                     <ul>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="curriculum.html">Curriculum</a></li>
                         <li><a href="findus.html">Find Us</a></li>
                         <li><a href="apply.html">Apply</a></li>
                     </ul>
-                </div> 
-            </header>
-
-            <!-- Mobile header, used for smaller screens -->
-            <header class="header-mobile">
-                <div class="header-content-block">
-                    <div class="header-content-flex">
-                        <a href="index.html"><img src="resources/Logo.png" alt="Logo" class="header-logo"></a>
-                        <!--  Hamburger menu button -->
-                        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()"><button class="hamburger-menu-button">&#9776;</button></a>
-                    </div>
-                    <div id="mobile-menu-item" class="mobile-menu-item">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="curriculum.html">Curriculum</a></li>
-                            <li><a href="findus.html">Find Us</a></li>
-                            <li><a href="apply.html">Apply</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </header>
-            <!-- End Header -->
-
-            <!-- Main Section -->
-            <div class="main-flex-container">
-                <div class="main-flex">
-                    <article class="bigger">
-                        <!-- Simple Google Maps embed, no API is used -->
-                        <iframe style="width:100%; height:400px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2193.8648897739013!2d14.913306176248728!3d56.64218897342636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4656bffc20bde36b%3A0x55b9bbd56eb984a5!2sSpelkollektivet!5e0!3m2!1sen!2sse!4v1713785616927!5m2!1sen!2sse" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-                        <!-- Put this in a div to make the text appear closer together. -->
-                        <div class="no-margin">
-                            <p>Spelkollektivet</p> 
-                            <p>Gamla vägen 12</p> 
-                            <p>362 51 Väckelsång</p>
-                        </div>
-                    </article>
-                    <article class="smaller contact-info">
-                        <!-- Display a list of contact methods in a list. -->
-                        <ul>
-                            <li><img src="resources/phone-icon.png" alt="Phone icon"><a href="tel:0701729988">0701 - 72 99 88</a></li>
-                            <li><img src="resources/email-icon.png" alt="Mail icon"> <a href="mailto:contact@theindiequest.com">contact@theindiequest.com</a></li>
-                            <li><img src="resources/facebook-icon.png" alt="Facebook icon"><a href="https://www.facebook.com/TheIndieQuest">The Indie Quest on Facebook</a></li>
-                            <li><img src="resources/discord-icon.png" alt="Discord icon"><a href="https://discord.gg/YBq4xYX">Join our Discord server!</li></a>
-                        </ul>
-                    </article>
                 </div>
             </div>
+        </header>
+        <!-- End Header -->
+        
+        <!-- Main Section -->
+        <div class="main-flex-container">
+            <div class="main-flex">
+                <article class="bigger">
+                    <!-- Simple Google Maps embed, no API is used -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2193.8648897739013!2d14.913306176248728!3d56.64218897342636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4656bffc20bde36b%3A0x55b9bbd56eb984a5!2sSpelkollektivet!5e0!3m2!1sen!2sse!4v1713785616927!5m2!1sen!2sse" width="600" height="450" style="border:0; width:100%; height:400px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+                    <!-- div makes text appear closer together -->
+                    <div class="no-margin">
+                        <p>Spelkollektivet</p> 
+                        <p>Gamla vägen 12</p> 
+                        <p>362 51 Väckelsång</p>
+                    </div>
+                </article>
+                <article class="contact-info smaller">
+                    <ul>
+                        <li>
+                            <img src="resources/phone-icon.png" alt="Phone icon">
+                            <a href="tel:0701729988">0701 - 72 99 88</a>
+                        </li>
+                        <li>
+                            <img src="resources/email-icon.png" alt="Mail icon"> 
+                            <a href="mailto:contact@theindiequest.com">contact@theindiequest.com</a>
+                        </li>
+                        <li>
+                            <img src="resources/facebook-icon.png" alt="Facebook icon">
+                            <a href="https://www.facebook.com/TheIndieQuest">The Indie Quest on Facebook</a>
+                        </li>
+                        <li>
+                            <img src="resources/discord-icon.png" alt="Discord icon">
+                            <a href="https://discord.gg/aP5c2by8Vy">Join our Discord server!</a>
+                        </li>
+                    </ul>
+                </article>
+            </div>
         </div>
-
-        <!-- Scripts & Miscallenous -->
-
-        <!-- Hamburger Menu Script -->
-        <script src="scripts/menu.js"></script>
-
-        <!-- Dynamic Background Script -- has to be here so the DOM is loaded beforehand! -->
-        <script src="scripts/background.js"></script>
-    </body>
+    </div>
+    
+    <!-- Scripts & Miscallenous -->
+    
+    <!-- Hamburger Menu Script -->
+    <script src="scripts/menu.js"></script>
+    
+    <!-- Dynamic Background Script -- has to be here so the DOM is loaded beforehand! -->
+    <script src="scripts/background.js"></script>
+</body>
 </html>

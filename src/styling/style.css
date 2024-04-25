@@ -1,10 +1,10 @@
 /*
-    - Styling guidelines & pallettes - 
-    #E8E1D5 - Content background
-    #000000 - Content outline
-    #A08A68 - Border/Logo Outline
-    #E5BE7B - Header/Footer
-    #FFD800 - Accent
+- Styling guidelines & pallettes - 
+#E8E1D5 - Content background
+#000000 - Content outline
+#A08A68 - Border/Logo Outline
+#E5BE7B - Header/Footer
+#FFD800 - Accent
 */
 
 /* Body */
@@ -41,7 +41,7 @@ article{
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
-
+    
     text-align: center;
 }
 

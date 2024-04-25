@@ -1,11 +1,11 @@
 /* Since there's more text here, align it to the left for readability. */
 article p{
-    text-align: left;
+  text-align: left;
 }
 
 article img{
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 article iframe{
@@ -14,8 +14,8 @@ article iframe{
 }
 
 article .large-image{
-    width: 80%;
-    height: auto;
+  width: 80%;
+  height: auto;
 }
 
 .small-text-container{
@@ -27,14 +27,14 @@ article .large-image{
 
 /* Media queries for desktop, about page. */
 @media (min-width: 768px) {
-    .smaller{
-      flex-basis: calc(23.33% - 10px); /* 33.33% width for each info box with margin */
-    }
-    .bigger{
-        flex-basis: calc(46.66% - 10px); /* 66.66% width for each info box with margin */
-    }
-    article img{
-      width: 20%;
-      height: auto;
-    }    
+  .smaller{
+    flex-basis: calc(23.33% - 10px); /* 33.33% width for each info box with margin */
+  }
+  .bigger{
+    flex-basis: calc(46.66% - 10px); /* 66.66% width for each info box with margin */
+  }
+  article img{
+    width: 20%;
+    height: auto;
+  }    
 }

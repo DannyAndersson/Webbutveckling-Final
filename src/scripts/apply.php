@@ -4,12 +4,12 @@ $data = [
     'personnummer' => $_POST['personnummer'],
     'fornamn' => $_POST['fornamn'],
     'efternamn' => $_POST['efternamn'],
-    'co' => isset($_POST['co']) ? $_POST['co'] : '', // optional
+    'co' => isset($_POST['co']) ? $_POST['co'] : '',                // optional
     'adress' => $_POST['adress'],
     'postnummer' => $_POST['postnummer'],
     'ort' => $_POST['ort'],
-    'telefon' => isset($_POST['telefon']) ? $_POST['telefon'] : '', 
-    'email' => isset($_POST['email']) ? $_POST['email'] : '', 
+    'telefon' => isset($_POST['telefon']) ? $_POST['telefon'] : '', // also optional
+    'email' => isset($_POST['email']) ? $_POST['email'] : '',       // optional
     'kontakt' => $_POST['kontakt'],
     'medborgarskap' => $_POST['medborgarskap'],
     'land' => isset($_POST['land']) ? $_POST['land'] : '', 
@@ -27,7 +27,7 @@ $jsonData = json_encode($data, JSON_PRETTY_PRINT);
 // does our applications directory exist? if not, create it
 $dirPath = 'applications';
 if (!is_dir($dirPath)) {
-    mkdir($dirPath, 0777, true); // create the directory. i think this only works on linux
+    mkdir($dirPath, 0777, true); // create the directory. only tested on linux! if you're using windows, lmao
 }
 
 // write the file
