@@ -107,7 +107,7 @@ Header for mobile navbar
 }
 
 /* Query for mobile view */
-@media only screen and (max-width: 1365px) {
+@media only screen and (max-width: 818px) {
     .header-desktop{
         display: none;
     }
@@ -117,11 +117,22 @@ Header for mobile navbar
 }
 
 /* Query for desktop view */
-@media only screen and (min-width: 1366px) {
+@media only screen and (min-width: 819px) {
     .header-desktop{
         display: block;
     }
     .header-mobile{
         display: none;
+    }
+}
+
+@media only screen and (max-width: 1366px){
+    .header-desktop ul li{
+        margin: 5%;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .header-desktop ul li{
+        margin: 3%;
     }
 }
